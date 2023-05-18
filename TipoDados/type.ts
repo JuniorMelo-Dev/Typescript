@@ -1,14 +1,13 @@
-// Criando Tuple
+// Criando Enum
 
-let tuple: [string, any, number] [] = [
-    ['url', 'https://www.google.com/search', 1230],
-    ['port', 5500, 1230]
-]
+enum CardSuits {Clubs, Hearts, Spades, Diamonds}
 
 function funcao() {
-    tuple.forEach(element => {
-        console.log(element[1])
-    })
+    let x = 0;
+    if (x === CardSuits.Hearts) {
+        alert("True");
+    }
+    console.log(CardSuits.Clubs);
 }
 
 funcao();

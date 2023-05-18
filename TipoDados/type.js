@@ -1,11 +1,16 @@
-// Criando Tuple
-var tuple = [
-    ['url', 'https://www.google.com/search', 1230],
-    ['port', 5500, 1230]
-];
+// Criando Enum
+var CardSuits;
+(function (CardSuits) {
+    CardSuits[CardSuits["Clubs"] = 0] = "Clubs";
+    CardSuits[CardSuits["Hearts"] = 1] = "Hearts";
+    CardSuits[CardSuits["Spades"] = 2] = "Spades";
+    CardSuits[CardSuits["Diamonds"] = 3] = "Diamonds";
+})(CardSuits || (CardSuits = {}));
 function funcao() {
-    tuple.forEach(function (element) {
-        console.log(element[1]);
-    });
+    var x = 0;
+    if (x === CardSuits.Hearts) {
+        alert("True");
+    }
+    console.log(CardSuits.Clubs);
 }
 funcao();
