@@ -1,4 +1,4 @@
-class Default {
+class Default2 {
 
     //Tipos
     texto: string;
