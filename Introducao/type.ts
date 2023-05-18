@@ -22,7 +22,8 @@ class Default {
 
     // Sobrescrevendo conteúdo de string
     method() {
-        this.texto = "Alert simples em TypeScript";
+        this.numero = 33;
+        this.texto = `TemplateString e concatenação em TypeScript, valor da variável número:  ${this.numero}`;
         return alert(this.texto);
     }
 }
