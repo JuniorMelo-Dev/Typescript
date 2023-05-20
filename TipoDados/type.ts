@@ -1,13 +1,6 @@
-// Criando Enum
+// Criando Objeto com campo opcional
 
-enum CardSuits {Clubs, Hearts, Spades, Diamonds}
-
-function funcao() {
-    let x = 0;
-    if (x === CardSuits.Hearts) {
-        alert("True");
-    }
-    console.log(CardSuits.Clubs);
+let obj: {name: string, age: number, active?: boolean} = {
+    name: "Junior Dev",
+    age: 33
 }
-
-funcao();
