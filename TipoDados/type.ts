@@ -1,6 +1,6 @@
-// Criando Objeto com campo opcional
+// Criando array de Objetos com tipos diferentes
 
-let obj: {name: string, age: number, active?: boolean} = {
-    name: "Junior Dev",
+let obj: {[key: string]: any} = {
+    name: "Junior",
     age: 33
 }
